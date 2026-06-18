@@ -3,7 +3,6 @@ body {
   font-size: 13px;
   color: #515076;
 }
-
 .title {
   font-size: 70px;
   font-weight: 400;
@@ -16,24 +15,59 @@ body {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  
+  justify-content: center;
+  width: 1110px;
+  gap: 45px;
+  margin: 0 auto;
+  padding: 0;
+ 
 }
 .card {
   width: 340px;
-  height: 573px;
+  min-height: 560px;
   background-color: #F7F7FA;
-  margin: 45px;
+  box-shadow: 2px 2px 10px 0px; /* тень карточки */
   padding: 25px;
+  cursor: pointer;
+  box-sizing: border-box;
 }
-
 .card-image {
-  width: 290px;
+
   height: 245px;
 }
 .cos {
   font-weight: 252px;
 }
+.buy {
+  background-color: #515076;
+  color: #fff;
+  border: 1px solid #0000;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 20px;
+  transition: opacity 0.3s ease;
+  opacity: var(--opacity);
 
+  &:hover {
+  --opacity: 0.7;
+  }
 
-
-
+  &:active {
+    opacity: 0.9;
+  }
+}
+.buy-green {
+background-color: #016b01;
+}
+.buy-red{
+  background-color: #800101;
+ }
+.buy-purple{
+  background-color: #750175;
+ }
+.buy-yellow{
+  background-color: #787801;
+ }
+.buy-blue{
+  background-color: #050172;
+ }
