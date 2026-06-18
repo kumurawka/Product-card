@@ -3,6 +3,14 @@ body {
   font-size: 13px;
   color: #515076;
 }
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+  background-image: url("images/bg 1.jpg");
+  background-size: 790px 697px;
+  background-position: left top;
+  background-repeat: repeat;
+}
 .title {
   font-size: 70px;
   font-weight: 400;
@@ -32,21 +40,22 @@ body {
   box-sizing: border-box;
 }
 .card-image {
-
   height: 245px;
 }
-.cos {
-  font-weight: 252px;
-}
+
 .buy {
   background-color: #515076;
   color: #fff;
   border: 1px solid #0000;
   border-radius: 5px;
   padding: 10px 20px;
-  font-size: 20px;
+  font-size: 15px;
   transition: opacity 0.3s ease;
   opacity: var(--opacity);
+  display: block;
+  width: 100%;
+  margin-top: 12px;
+  box-sizing: border-box;
 
   &:hover {
   --opacity: 0.7;
