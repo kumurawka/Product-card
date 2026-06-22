@@ -25,9 +25,9 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   width: 1110px;
-  gap: 45px;
   margin: 0 auto;
   padding: 0;
+  gap: 45px;
  
 }
 .card {
@@ -38,9 +38,15 @@ body {
   padding: 25px;
   cursor: pointer;
   box-sizing: border-box;
+  border-radius: 10px;
 }
 .card-image {
   height: 245px;
+}
+
+.card-price {
+  display: flex;
+  justify-content: space-between;
 }
 
 .buy {
