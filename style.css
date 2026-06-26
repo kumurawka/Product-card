@@ -50,6 +50,20 @@ body {
   position: relative;
   transform: scale(1.02);
 }
+
+.card ul {
+  margin-top: 10px;
+}
+
+.card li {
+  margin-bottom: 10px;
+}
+
+
+.card li:last-child {
+  margin-bottom: 0;
+}
+
 .card:hover {
   transform: scale(1.05);
 }
@@ -90,19 +104,19 @@ body {
 .card-price {
   display: flex;
   justify-content: space-between;
+  margin-top: 10px;
 }
 
 .rating-box {
   display: flex;
   align-items: center;
-  
   margin-top: 15px;
   margin-bottom: 5px;
 }
 
 .star {
   font-size: 17px;
-  margin: 0; /* Сбрасываем лишние отступы */
+  margin: 5;
 }
 
 .star.full {
@@ -112,6 +126,12 @@ body {
 .star.empty {
   color: #e0e0e0;
 }
+
+.stars-list {
+  display: flex !important;
+  gap: 8px !important;
+}
+
 
 .star.half {
   background: linear-gradient(90deg, #f5c518 50%, #e0e0e0 50%);
@@ -195,3 +215,4 @@ body {
 .buy-blue {
   background-color: #050172;
 }
+
