@@ -72,7 +72,7 @@ body {
   height: 245px;
 }
 
-.card__first {
+.card--first {
   background-color: #e9ebfa;
   border: 3px solid #020202;
   box-shadow: 0px 10px 25px;
@@ -80,15 +80,15 @@ body {
   transform: scale(1.02);
 
 }
-.first_card:hover {
+.card--first:hover {
   transform: scale(1.06);
 }
 
-.first-title {
+.card__first--title {
   color: #1f1c67;
 }
 
-.card__badge-hit {
+.card__badge--hit {
   position: absolute;
   top: 15px;
   left: 25px;
@@ -100,20 +100,20 @@ body {
   border-radius: 5px;
 }
 
-.card__price-box {
+.card__price--box {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 
-.card__price-label {
+.card__price--label {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
 }
 
-.card__price-value {
+.card__price--value {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -121,7 +121,7 @@ body {
   color: #000000;
 }
 
-.card__rating-box {
+.card__rating--box {
   display: flex;
   align-items: center;
   margin-top: 15px;
@@ -134,20 +134,20 @@ body {
   margin: 5px;
 }
 
-.card__star_full {
+.card__star--full {
   color: #f5c518;
 }
 
-.card__star_empty {
+.card__star--empty {
   color: #e0e0e0;
 }
 
-.card__stars-list {
+.card__stars--list {
   display: flex !important;
   gap: 8px !important;
 }
 
-.card__star_half {
+.card__star--half {
   background: linear-gradient(90deg, #f5c518 50%, #e0e0e0 50%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -156,7 +156,7 @@ body {
   display: inline-block;
 }
 
-.card__star_half-33 {
+.card__star--half-33 {
   background: linear-gradient(90deg, #f5c518 30%, #e0e0e0 30%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -165,7 +165,7 @@ body {
   display: inline-block;
 }
 
-.card__star_half-80 {
+.card__star--half-80 {
   background: linear-gradient(90deg, #f5c518 80%, #e0e0e0 80%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -174,7 +174,7 @@ body {
   display: inline-block;
 }
 
-.card__star_half-10 {
+.card__star--half-10 {
   background: linear-gradient(90deg, #f5c518 10%, #e0e0e0 10%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -188,7 +188,7 @@ body {
   color: #000000;
 }
 
-.card__target-skin {
+.card__target--skin {
   font-size: 15px;
   color: #515076;
   margin-top: 10px;
@@ -217,22 +217,22 @@ body {
   }
 }
 
-.card__buy-green {
+.card__buy--green {
   background-color: #016b01;
 }
 
-.card__buy-red {
+.card__buy--red {
   background-color: #800101;
 }
 
-.card__buy-purple {
+.card__buy--purple {
   background-color: #750175;
 }
 
-.card__buy-yellow {
+.card__buy--yellow {
   background-color: #787801;
 }
 
-.card__buy-blue {
+.card__buy--blue {
   background-color: #050172;
 }
