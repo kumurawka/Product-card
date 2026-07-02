@@ -11,7 +11,6 @@ body {
   background-size: 790px 697px;
   background-position: left top;
   background-repeat: repeat;
-
 }
 
 .title {
@@ -68,12 +67,12 @@ body {
   transform: scale(1.05);
 }
 
-.card-image{
+.card__image {
   width: 100%;
   height: 245px;
 }
 
-.first-card {
+.card__first {
   background-color: #e9ebfa;
   border: 3px solid #020202;
   box-shadow: 0px 10px 25px;
@@ -81,7 +80,7 @@ body {
   transform: scale(1.02);
 
 }
-.first-card:hover {
+.first_card:hover {
   transform: scale(1.06);
 }
 
@@ -89,7 +88,7 @@ body {
   color: #1f1c67;
 }
 
-.badge-hit {
+.card__badge-hit {
   position: absolute;
   top: 15px;
   left: 25px;
@@ -101,39 +100,54 @@ body {
   border-radius: 5px;
 }
 
-.card-price {
+.card__price-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.card__price-label {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
 }
 
-.rating-box {
+.card__price-value {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  color: #000000;
+}
+
+.card__rating-box {
   display: flex;
   align-items: center;
   margin-top: 15px;
   margin-bottom: 5px;
 }
 
-.star {
+
+.card__star {
   font-size: 17px;
-  margin: 5;
+  margin: 5px;
 }
 
-.star.full {
+.card__star_full {
   color: #f5c518;
 }
 
-.star.empty {
+.card__star_empty {
   color: #e0e0e0;
 }
 
-.stars-list {
+.card__stars-list {
   display: flex !important;
   gap: 8px !important;
 }
 
-
-.star.half {
+.card__star_half {
   background: linear-gradient(90deg, #f5c518 50%, #e0e0e0 50%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -142,7 +156,7 @@ body {
   display: inline-block;
 }
 
-.star.half-33 {
+.card__star_half-33 {
   background: linear-gradient(90deg, #f5c518 30%, #e0e0e0 30%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -151,7 +165,7 @@ body {
   display: inline-block;
 }
 
-.star.half-80 {
+.card__star_half-80 {
   background: linear-gradient(90deg, #f5c518 80%, #e0e0e0 80%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -160,7 +174,7 @@ body {
   display: inline-block;
 }
 
-.star.half-10 {
+.card__star_half-10 {
   background: linear-gradient(90deg, #f5c518 10%, #e0e0e0 10%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -169,11 +183,18 @@ body {
   display: inline-block;
 }
 
-.rating {
+.card__rating {
   font-size: 15px;
   color: #000000;
 }
-.buy {
+
+.card__target-skin {
+  font-size: 15px;
+  color: #515076;
+  margin-top: 10px;
+}
+
+.card__buy {
   background-color: #515076;
   color: #fff;
   border: 1px solid #0000;
@@ -196,23 +217,22 @@ body {
   }
 }
 
-.buy-green {
+.card__buy-green {
   background-color: #016b01;
 }
 
-.buy-red {
+.card__buy-red {
   background-color: #800101;
 }
 
-.buy-purple {
+.card__buy-purple {
   background-color: #750175;
 }
 
-.buy-yellow {
+.card__buy-yellow {
   background-color: #787801;
 }
 
-.buy-blue {
+.card__buy-blue {
   background-color: #050172;
 }
-
