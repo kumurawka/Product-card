@@ -84,11 +84,11 @@ body {
   transform: scale(1.06);
 }
 
-.card__first--title {
+.card__title {
   color: #1f1c67;
 }
 
-.card__badge--hit {
+.card__badge-hit {
   position: absolute;
   top: 15px;
   left: 25px;
@@ -121,7 +121,7 @@ body {
   color: #000000;
 }
 
-.card__rating--box {
+.card__rating-box {
   display: flex;
   align-items: center;
   margin-top: 15px;
