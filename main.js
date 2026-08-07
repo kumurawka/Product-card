@@ -26,7 +26,7 @@ function openGoogle() {
 }
 
 const outputConsoleLogButton = document.querySelector('#output-console-log');
-outputConsoleLogButton.addEventListener('click',() => outputConsoleLog(не поняла))
+outputConsoleLogButton.addEventListener('click',() => outputConsoleLog('смогла!'));
 
 function outputConsoleLog(message) {
   alert(message)
