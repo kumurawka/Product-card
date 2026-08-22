@@ -22,8 +22,8 @@ const carDetails = {
 carDetails.owner = userProfile;
 
 function addMaxSpeed(car) {
-  if (!("Максимальная скорость" in car)) {
-    car["Максимальная скорость"] = "60 км/ч";
+  if (!("maxSpeed" in car)) {
+    car["maxSpeed"] = "60 км/ч";
   }
 }
 addMaxSpeed(carDetails);
