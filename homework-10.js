@@ -4,31 +4,36 @@ const productObj = productCard.reduce((acc, item) => {
   const name = item['product name'];
   acc[name] = item.compound;
   return acc;
-}
-  );
+}, {});
+  
 console.log(productObj);
 
-
+while (true) {
   const userInput = prompt('Введите количество карточек товаров (от 1 до 5)');
-  const count = parseInt(userInput, 10);
+  const count = Number(userInput, 10);
 
-  if (isNaN(count) || count < 1 || count > 5) {
+  if (Number.isInteger(count) && (count >= 1 && count <= 5)) {
+    break;
+  }
+  
     alert('Ошибка ввода! Пожалуйста, введите число от 1 до 5.');
   }
 
-  else {
     const container = document.querySelector('.product-list');
     const template = document.getElementById('product-card-template');
 
     if (container && template) {
-      const selectedProducts = template.content.cloneCode(true);
+      const productsToRender = productCard.slice(0, count);
 
-      cardClone.querySelector('product-card__title').textContent = product['product name'];
-      cardClone.querySelector('product-card__description').textContent = product.compound;
-      cardClone.querySelector('product-card__rating').textContent = `Рейтинг: ${product.rating}`;
-      cardClone.querySelector('product-card__price').textContent = `Цена: ${product.price} руб.`;
+      productsToRender.forEach((product) => {
+        const cardClone = template.content.cloneNode(true);
+
+      cardClone.querySelector('.card__title').textContent = product['product name'];
+      cardClone.querySelector('.card__description').textContent = product.compound;
+      cardClone.querySelector('.card__rating').textContent = `Рейтинг: ${product.rating}`;
+      cardClone.querySelector('.card__price').textContent = `Цена: ${product.price} руб.`;
       container.appendChild(cardClone);
-    }
+    });
   }
 
 
