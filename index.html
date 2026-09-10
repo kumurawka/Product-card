@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +16,29 @@
     <button id="change-color-first-card">сменить цвет первой карточки</button>
     <button id="open-google">Открыть страницу Google</button>
     <button id="output-console-log">Вывести сообщение в консоль лог</button>
+
+    <ul class="product-list"></ul>
+
+    <template id="product-card-template">
+      <li class="card">
+        <img class="card__image" src="" alt="Товар">
+        <div class="card__rating-box">
+          <div class="card__stars-list"></div>
+          <span class="card__rating"></span>
+        </div>
+        <p class="card__target-skin"></p>
+        <h2 class="card__title"></h2>
+        <p class="card__description"></p>
+        <span class="card__composition-title">Состав:</span>
+        <ul class="card__composition-list"></ul>
+        <div class="card__price-box">
+          <b class="card__price-label">Цена:</b>
+          <span class="card__price-value"></span>
+        </div>
+        <button class="card__buy">Купить</button>
+      </li>
+    </template>
+
     <ul class="product-list">
       <li class="card card--first">
         <span class="card__badge-hit">Хит продаж</span>
@@ -46,7 +68,6 @@
       </div>
       <button class="card__buy card__buy--green">Купить</button>
     </li>
-
 
     <li class="card">
       <img class="card__image" src="images/photo 2.jpg" alt="Товар Увлажняющая маска ">
@@ -161,5 +182,5 @@
     </li>
   </ul>
   </div>
-  <script src="homework-8.js"></script>
+  <script src="homework-10.js" type="module"></script>
 </body>
