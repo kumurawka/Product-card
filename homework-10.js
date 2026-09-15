@@ -22,6 +22,7 @@ while (true) {
     const container = document.querySelector('.product-list');
     const template = document.getElementById('product-card-template');
 
+    const count = 5;
     if (container && template) {
       const productsToRender = productCard.slice(0, count);
 
@@ -29,9 +30,36 @@ while (true) {
         const cardClone = template.content.cloneNode(true);
 
       cardClone.querySelector('.card__title').textContent = product['product name'];
-      cardClone.querySelector('.card__description').textContent = product.compound;
+      cardClone.querySelector('.card__price-value').textContent = `Цена: ${product.price} руб.`;
       cardClone.querySelector('.card__rating').textContent = `Рейтинг: ${product.rating}`;
-      cardClone.querySelector('.card__price').textContent = `Цена: ${product.price} руб.`;
+
+      if (product.image) {
+        cardClone.querySelector('.card__image').src = product.image;
+      }
+      
+      const buyButton = cardClone.querySelector('.card__buy');
+      buyButton.textContent = 'Купить';
+      if (product.buttonColor) {
+        buyButton.style.backgroundColor = product.buttonColor;
+      }
+
+      const starList = cardClone.querySelector('.card__stars-list');
+      if (starList) {
+        starList.textContent = '★'.repeat(Math.floor(product.rating));
+      }
+
+      const compositionList = cardClone.querySelector('.card__composition-list');
+      if (compositionList) {
+        compositionList.innerHTML = '';
+      }
+
+      product.compound.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = item;
+        compositionList.appendChild(li);
+      });
+    
+
       container.appendChild(cardClone);
     });
   }

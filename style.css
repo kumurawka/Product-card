@@ -102,8 +102,10 @@ body {
 
 .card__price-box {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+  margin-top: 10px;
+  
 }
 
 
