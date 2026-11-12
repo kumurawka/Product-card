@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header></header>
+<main></main>
+<footer class="footer">
+  <div class="footer__container">
+    <!--Левая колонка-->
+  <div class="footer__info">
+  <h2 class="footer__logo">Product cards</h2>
+  <p class="footer__tagline">У нас самые лучшие продукты для кожи!</p>
+  <!--Соцсети-->
+  <div class="footer__socials">
+    <a href="https://web.telegram.org/" class="footer__social-link" target="_blank">
+      <img src="images/telegram_5968804.png" alt="Telegram" width="25" height="25">
+    </a>
+    <a href="https://www.vk.com/" class="footer__social-link" target="_blank">
+      <img src="images/vkontakte_3536582.png" alt="VK" width="25" height="25">
+    </a>
+  </div>
+  </div>
+    <!--Центр-->
+<div class="footer__subscribe">
+  <h3 class="footer__subscribe-title">Подпишись на наши акции</h3>
+  <form class="footer__form" id="subscribe-form">
+    <label class="visually-hidden" for="email">Ваш Email</label>
+    <input 
+    class="footer__input"
+    type="email"
+    id="email"
+    name="email"
+    placeholder="Введите Email"
+    minlength="5"
+    required
+    />
+    <button class="footer__button" type="submit">Подписаться</button>
+  </form>
+</div>
+    <!--Правая колонка-->
+  <div class="footer-links">
+    <h3>Быстрые ссылки</h3>
+    <ul>
+      <li><a href="#">Главная</a></li>
+      <li><a href="#">Магазин</a></li>
+      <li><a href="#">Контакты</a></li>
+    </ul>
+  </div>
+  </div>
+</footer>
+
+
+<button id="openModal">Регистрация</button>
+<div id="registrationModal" class="modal">
+<div class="modal-content">
+  <span class="close-btn" id="closeModalBtn">&times;</span>
+  <h2>Регистрация</h2>
+
+<form id="regForm" novalidate>
+  <div class="form-group">
+    <label for="firstName">Имя:</label>
+    <input type="text" id="firstName"
+    placeholder="Введите ваше имя"
+    required>
+</div>
+
+<div class="form-group">
+  <label for="lastName">Фамилия:</label>
+  <input type="text" id="lastName"
+  placeholder="Введите вашу фамилию"
+  required>
+</div>
+
+<div class="form-group">
+  <label for="birthDate">Дата рождения:</label>
+  <input type="date" id="birthDate"
+  required>
+</div>
+
+<div class="form-group">
+  <label for="login">Логин:</label>
+  <input type="text" id="login"
+  placeholder="Придумайте логин"
+  required minlength="3">
+</div>
+
+<div class="form-group">
+  <label for="password">Пароль:</label>
+  <input type="password" id="password"
+  placeholder="Введите пароль"
+  required minlength="6">
+</div>
+
+<div class="form-group">
+  <label for="confirmPassword">Повторите пароль:</label>
+  <input type="password" id="confirmPassword"
+  placeholder="Повторите пароль"
+  required>
+</div>
+
+<button type="submit" class="submit-btn">Зарегистрироваться</button>
+</form>
+</div>
+</div>
+</body>
+<script src="homework-11.js"></script>
+</body>
+</html>
